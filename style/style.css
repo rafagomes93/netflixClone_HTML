@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  outline: 0;
+  list-style: none;
+}
+
+:root{
+  /*Cores*/
+  --fundo: #111;
+  --primary: red;
+  --branco: #fff;
+
+  /*Medidas*/
+  --pad-padrao: 1.2rem;
+
+  /*TRANSITION*/
+  --pad-trans: .2s;
+}
+
+body{
+  background-color: var(--fundo);
+}
+
+#menu-mobile, #close-menu{
+  display: none;
+  color: var(--branco);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--fundo);
+}
+
+.container{
+  padding: 0 var(--pad-padrao);
+}
+
+header a img{
+  width: 190px;
+  padding-left: var(--pad-padrao);
+}
+
+ul{
+  display: flex;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  color: var(--branco);
+  font-weight: bold;
+  padding: 22px;
+  transition: var(--pad-trans);
+}
+
+ul li a:hover{
+  background-color: var(--primary);
+}
+
+.banner{
+  background-image: url(../img/principe.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+.banner .gradient-top{
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, var(--fundo) 20%, transparent 80%);
+}
+
+.banner .gradient-right{
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, var(--fundo) 20%, transparent 80%);
+}
+
+.info{
+  padding: 13rem var(--pad-padrao);
+  color: var(--branco);
+}
+
+.title{
+  font-size: 30px;
+}
+
+.sinopse{
+  font-size: 16px;
+  max-width: 40%;
+  padding: 1em 0 2rem 0;
+}
+
+.btn{
+  max-width: 40%;
+}
+
+.btn button{
+  padding: 9px;
+  width: 49%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0.5px solid var(--branco);
+  color: var(--branco);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--pad-trans);
+}
+
+.btn button:hover{
+  background-color: var(--branco);
+  color: var(--fundo);
+}
+
+.btn .btn-play:hover{
+  background-color: var(--primary);
+  border: none;
+  color: var(--branco);
+}
+
+.box{
+  width: 100%;
+  display: block;
+  margin: 0 10px;
+}
+
+.tag{
+  margin-left: var(--pad-padrao);
+  color: var(--branco);
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.item .box{
+  width: 90px;
+  transition: var(--pad-trans);
+}
+
+.item .box:hover{
+  transform: scale(0.9);
+}
+
+.rodape{
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+}
+
+.rodape p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.rodape span{
+  text-align: center;
+  padding: 0 5px;
+}
