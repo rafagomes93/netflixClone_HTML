@@ -69,7 +69,7 @@ ul li a:hover{
 
 .banner{
   background-image: url(../img/principe.jpg);
-  height: 600px;
+  height: 500px;
   width: 100%;
   background-size: cover;
 }

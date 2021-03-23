@@ -87,7 +87,7 @@
   }
 
   .btn{
-    max-width: 50%;
+    max-width: 60%;
   }
 
   .box{
@@ -98,6 +98,7 @@
 @media(max-width: 438px){
   .banner{
     height: 300px;
+    margin-bottom: 17px;
   }
 
   .info{
@@ -125,7 +126,7 @@
   }
 
   .tag{
-    padding-top: 4px 0;
+    padding: 10px 0;
   }
 
   .box{
